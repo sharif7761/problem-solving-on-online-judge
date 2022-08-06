@@ -31,3 +31,17 @@ int main()
             
     return 0;
 }
+
+
+//test cases
+// kayak
+// deified
+// rotator
+// repaper
+// deep
+// noon
+// civic
+// racecar
+// level
+// step on no pets
+// dennis and dna sinned
