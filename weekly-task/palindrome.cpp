@@ -12,8 +12,11 @@ int checkLength(string givenString){
 
 int main()
 {
-    string inputString;
-    cin >> inputString;
+    // string inputString;
+    // cin >> inputString;
+    
+    char inputString[256];
+    cin.getline (inputString,256);
     
     // int inputLeng = inputString.length();
     int inputLeng = checkLength(inputString);
