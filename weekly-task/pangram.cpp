@@ -3,19 +3,19 @@
 #include <iostream>
 using namespace std;
 int main() {
-   char str[100] = "The quick brown fox jumps over the lazy dog";
+   char str[100] = "the quick brown fox jumps over the lazy dog"; // 4 * 100
    
-   int i = 0, alphabet[26] = {0}, j, isPangram = 0;
+   int i = 0, alphabet[26] = {0}, j, isPangram = 0; // 4 + 4 * 26 + 4 + 4 
    
-   while (str[i] != '\0') {
+   while (str[i] != '\0') { // 4 * n 
       if (str[i] >= 'a' && str[i] <= 'z') {
          j = str[i] - 'a';
-         ++alphabet[j];
+         alphabet[j]++;
       }
-      ++i;
+      i++;
    }
    cout<<"Frequency of all alphabets in the string is:"<<endl;
-   for (i = 0; i < 26; i++){
+   for (i = 0; i < 26; i++){    // 4 * 26
        cout<< char(i + 'a')<<" : "<< alphabet[i]<< endl;
        if(alphabet[i] == 0){
            isPangram++;
@@ -29,3 +29,6 @@ int main() {
    
    return 0;
 }
+
+// time => O(n) + O(n) = O(n) 
+//space => O(1) + O(4n) + O(4n) = O(n)
