@@ -1,0 +1,30 @@
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let input = "";
+let input_currentline = 0;
+let input_array;
+
+process.stdin.on('data', function(chunk) {
+    input = chunk;
+});
+
+function readLine() {
+    return input_array[input_currentline++];
+}
+
+process.stdin.on('end', function() {
+    input_array = input.split("\n");
+    // write your main code below
+
+    let n = parseInt(readLine());
+    for (let i = 0; i < n; i++) {
+        let st = readLine();
+        let length = st.length - 1;
+        if (length <= 10) {
+            console.log(st);
+        } else {
+            console.log(st.charAt(0) + (length - 2) + st.charAt(length - 1));
+        }
+    }
+});
