@@ -1,0 +1,5 @@
+// https://codeforces.com/problemset/problem/617/A
+
+var line = readline().split(' ');
+var input = Number(line[0]);
+print(Math.ceil(input/5));
