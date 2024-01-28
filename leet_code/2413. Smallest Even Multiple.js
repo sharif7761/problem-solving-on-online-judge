@@ -5,4 +5,13 @@ var smallestEvenMultiple = function(n) {
         n = n * 2;
     }
     return n;
+
+    // or
+    // var i = 2;
+    // while(true){
+    //     if((i % n === 0) && (i % 2 === 0)){
+    //         return i;
+    //     }
+    //     i++;
+    // }
 };
